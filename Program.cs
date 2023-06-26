@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Xml;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace ConsoleApp4
 {
@@ -25,10 +27,10 @@ namespace ConsoleApp4
             Console.WriteLine("1 PARA = Digitação dos 10 números inteiros no vetor"); // ok
             Console.WriteLine("2 PARA = Impressão do valor do somatório dos números do vetor"); //ok
             Console.WriteLine("3 PARA = Impressão média dos números do vetor"); //ok    
-            Console.WriteLine("4 PARA = Substituir todos os números negativos por zero");
-            Console.WriteLine("5 PARA = Substituir todos os números repetidos por zero");
-            Console.WriteLine("6 PARA = Proponha uma nova função utilizando o vetor.");
-            Console.WriteLine("7 PARA = Mostrar todos os números do vetor ");
+            Console.WriteLine("4 PARA = Substituir todos os números negativos por zero"); //ok
+            Console.WriteLine("5 PARA = Substituir todos os números repetidos por zero"); //ok
+            Console.WriteLine("6 PARA = Função de criptografar os numeros do vet"); //ok
+            Console.WriteLine("7 PARA = Mostrar todos os números do vetor "); //ok
 
             int leitura = 0;
             try
@@ -58,7 +60,7 @@ namespace ConsoleApp4
                     Funcoes.SubstituiN_Repitidos();
                     break;
                 case 6:
-                    Funcoes.Desenho();
+                    Funcoes.Cripotografar();
                     break;
                 case 7:
                     Funcoes.MostraVector();
